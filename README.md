@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [husam"s Solution](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj/hub/order-summary-component-with-nice-hover-effect-using-flexbox-GH_WGdLiGQ)
+- Live Site URL: [the website](https://husamasaad.github.io/Order-summary-component/)
 
 ## My process
 
