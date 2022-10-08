@@ -1,0 +1,163 @@
+
+/* Global Rule -Start */
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--Pale-blue);
+}
+
+/* Global Rule -End */
+
+
+main {
+    background-image: url(images/pattern-background-desktop.svg);
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 767px) {
+    main {
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+}
+
+section {
+    width: 450px;
+    height: 700px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+@media (max-width: 767px) {
+    section {
+        width: 350px;
+    }
+}
+section > img {
+    max-width: 100%;
+}   
+
+section article {
+    margin: 50px auto;
+    height: 100%;
+}
+@media (max-width: 767px) {
+    article {
+        margin: 70px auto 0;
+    }
+}
+
+article h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--Dark-blue);
+}
+
+article p {
+    margin: 30px auto 0;
+    max-width: 70%;
+    line-height: 1.6;
+    color: var(--Desaturated-blue);
+}
+
+
+article .plan {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    margin: 30px auto 0;
+    padding: 5%;
+    background-color: var(--Very-pale-blue);
+    border-radius: 20px;
+}
+
+article .plan .price {
+    width: 65;
+    padding-left: 15px;
+    text-align: left;
+}
+
+article .plan b {
+    font-size: 1rem;
+    color: var(--Dark-blue);
+}
+
+article .plan a {
+    color: var(--Bright-blue);
+}
+
+article .plan a:hover {
+    color: var(--Desaturated-blue);
+    text-decoration: none;
+}
+
+article button {
+    border-radius: 15px;
+    border: none;
+    display: block;
+    margin: 30px auto 0;
+    width: 70%;
+    height: 50px;
+    background-color: var(--Bright-blue);
+    color: var(--Very-pale-blue);
+    font-weight: 700;
+    box-shadow: var(--Pale-blue) 0px 20px 30px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+article button:hover {
+    background-color: var(--Desaturated-blue);
+}
+
+
+article .cancel {
+    display: block;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: var(--Desaturated-blue);
+}
+
+article .cancel:hover {
+    color: var(--Dark-blue);
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    margin-bottom: 3px;
+    font-size: 11px;
+    color: hsl(228, 45%, 44%);
+}
+@media (max-height: 710px) {
+    footer {
+        display: none;
+    }
+}
