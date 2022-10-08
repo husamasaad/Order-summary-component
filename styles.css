@@ -53,6 +53,7 @@ section {
     overflow: hidden;
     text-align: center;
     position: relative;
+    box-shadow: var(--Pale-blue) 0px 20px 30px;
 }
 @media (max-width: 767px) {
     section {
